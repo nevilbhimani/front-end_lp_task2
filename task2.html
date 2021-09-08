@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>front_end task2</title>
     <link rel="stylesheet" href="style.css">
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
-   
-    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+   <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
 </head>
 <body>
    <header class="headline">
@@ -19,11 +21,11 @@
    <table id="content_table">
       <thead>
            <tr>
-         <th> country</th>
-         <th>active cases</th>
-         <th>total cases</th>
-         <th>total recovered</th>
-         <th>total deaths</th>
+         <th data-column="country" data-order="desc"> country</th>
+         <th data-column="active_cases" data-order="desc">active cases</th>
+         <th data-column="total_cases" data-order="desc">total cases</th>
+         <th data-column="total_recovered " data-order="desc">total recovered</th>
+         <th data-column="total_deaths" data-order="desc"> total deaths</th>
       </tr>
       </thead>
       <tbody id="myTable">
